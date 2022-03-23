@@ -9,7 +9,6 @@ import org.json.simple.*;
 
 public class VoorheesExporter {
 
-	@SuppressWarnings("unchecked")
 	private static JSONObject crearJson(Socio s) {
 		JSONObject objectJson = new JSONObject();	
 		objectJson.put("name",s.getNombre());
@@ -19,7 +18,6 @@ public class VoorheesExporter {
 		return objectJson;
 	}
 	
-	@SuppressWarnings("unchecked")
 	public String exportar(List<Socio> socios) {
 		
 		JSONArray arrayJson = new JSONArray();

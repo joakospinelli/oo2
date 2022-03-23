@@ -2,6 +2,9 @@ package ar.edu.unlp.info.oo2.ejercicio_2;
 
 import java.util.List;
 
+/*
+ * En vez de trabajar con objetos tipo JSON, crea Strings que siguen el formato
+ */
 public class VoorheesExporter {
 
 	private String exportar(Socio socio) {
@@ -24,7 +27,7 @@ public class VoorheesExporter {
 				.append(",")
 				.append(separator);
 		});
-		// remueve la última coma y fin de línea
+
 		buffer.setLength(buffer.length() - (separator.length() + 1));
 		buffer.append(separator).append("]");
 		return buffer.toString();
