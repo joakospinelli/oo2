@@ -24,7 +24,7 @@ public class VoorheesExporter {
 				.append(",")
 				.append(separator);
 		});
-		// remueve la última coma y fin de línea
+
 		buffer.setLength(buffer.length() - (separator.length() + 1));
 		buffer.append(separator).append("]");
 		return buffer.toString();
