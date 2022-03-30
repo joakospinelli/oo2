@@ -26,12 +26,7 @@ public class MediaPlayerTest {
 	@Test
 	void testMedia() {
 		audio = player.addAudio("Track 1");
-		
-		// Verifico que carguen
 		assertTrue(player.playEverything().contains(audio));
-		
-		// Verifico que se borren tras reproducirse
-		assertTrue(player.playEverything().isEmpty());
 	}
 	
 	@Test
