@@ -13,16 +13,17 @@ public class CompositeTopografia implements Topografia {
 	public double getProporcion() {
 		return components.stream().mapToDouble(i -> i.getProporcion()).sum() / this.components.size();
 	}
+
+	public ArrayList<Topografia> getComponents(){
+		return this.components;
+	}
 	
-	public void addComponent(CompositeTopografia t) {
+	public void addComponent(Topografia t) {
 		if (components.size() < 4) this.components.add(t);
 	}
-	
-	public void addTierra(Tierra t) {
-		this.components.add(t);
+
+	public boolean esIgual(Topografia t){
+		return false;
 	}
 	
-	public void addAgua(Agua t) {
-		this.components.add(t);
-	}
 }

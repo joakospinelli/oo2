@@ -10,18 +10,10 @@ public class Editor {
 		this.topografias = new ArrayList<>();
 	}
 	
-	public void agregarTierra(Tierra t) {
+	public void agregarTopografia(Topografia t){
 		this.topografias.add(t);
 	}
-	
-	public void agregarAgua(Agua a) {
-		this.topografias.add(a);
-	}
-	
-	public void agregarComposite(CompositeTopografia c) {
-		this.topografias.add(c);
-	}
-	
+
 	public double sumarProporciones() {
 		return this.topografias.stream().mapToDouble(i -> i.getProporcion()).sum();
 	}
