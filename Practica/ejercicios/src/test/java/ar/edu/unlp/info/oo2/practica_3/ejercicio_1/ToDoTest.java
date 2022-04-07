@@ -1,7 +1,5 @@
 package ar.edu.unlp.info.oo2.practica_3.ejercicio_1;
 
-import ar.edu.unlp.info.oo2.practica_3.*;
-
 import java.time.temporal.ChronoUnit;
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package ar.edu.unlp.info.oo2.practica_3;
+package ar.edu.unlp.info.oo2.practica_3.ejercicio_1;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
