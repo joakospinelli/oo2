@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface Sugerencia {
     
-    public List<Pelicula> sugerir(List<Pelicula> peliculas);
+    public List<Pelicula> sugerir(Decodificador d);
 
 }

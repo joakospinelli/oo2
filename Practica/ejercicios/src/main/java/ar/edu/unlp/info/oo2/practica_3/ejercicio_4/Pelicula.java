@@ -1,13 +1,14 @@
 package ar.edu.unlp.info.oo2.practica_3.ejercicio_4;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Pelicula {
 
     private String titulo;
     private int estreno;
     private double puntaje;
-    private ArrayList<Pelicula> similares;
+    private List<Pelicula> similares;
 
     public Pelicula(String titulo, int estreno, double puntaje){
         this.titulo = titulo;
@@ -28,8 +29,15 @@ public class Pelicula {
         return this.puntaje;
     }
 
+    public List<Pelicula> getSimilares(){
+        return this.similares;
+    }
+
     public void agregarSimilar(Pelicula p){
-        this.similares.add(p);
+        if (!this.similares.contains(p)){
+            this.similares.add(p);
+            p.agregarSimilar(this);
+        }
     }
 
 }

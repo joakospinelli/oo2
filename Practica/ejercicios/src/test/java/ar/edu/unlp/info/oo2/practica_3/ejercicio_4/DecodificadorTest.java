@@ -16,6 +16,7 @@ public class DecodificadorTest {
     Pelicula p2;
     Pelicula p3;
     Pelicula p4;
+    Pelicula p5;
 
     void initialize(){
         grillaInicial = new ArrayList<>();
@@ -23,7 +24,8 @@ public class DecodificadorTest {
         p2 = new Pelicula("The Batman",2022,8);
         p3 = new Pelicula("Spider-man: No way home",2021,6);
         p4 = new Pelicula("Your Name.",2015,10);
-        grillaInicial.add(p1); grillaInicial.add(p2); grillaInicial.add(p3); grillaInicial.add(p4);
+        p5 = new Pelicula("Tenki no Ko",2019,9);
+        grillaInicial.add(p1); grillaInicial.add(p2); grillaInicial.add(p3); grillaInicial.add(p4); grillaInicial.add(p5);
         d = new Decodificador(grillaInicial);
     }
 
@@ -37,5 +39,20 @@ public class DecodificadorTest {
         d.setSugerencia(new Puntaje());
         assertTrue(d.sugerirPeliculas().contains(p4));
         assertFalse(d.sugerirPeliculas().contains(p3));
+    }
+
+    @Test
+    void testNovedad(){
+        d.setSugerencia(new Novedad());
+        assertTrue(d.sugerirPeliculas().contains(p1));
+        assertFalse(d.sugerirPeliculas().contains(p4));
+    }
+
+    @Test
+    void testSimilaridad(){
+        p4.agregarSimilar(p5);
+        d.comprarPelicula(p4);
+        d.setSugerencia(new Similaridad());
+        assertTrue(d.sugerirPeliculas().contains(p5));
     }
 }

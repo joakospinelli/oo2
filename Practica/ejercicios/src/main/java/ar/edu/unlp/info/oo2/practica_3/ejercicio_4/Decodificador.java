@@ -23,12 +23,16 @@ public class Decodificador {
     }
 
     public List<Pelicula> sugerirPeliculas(){
-        List<Pelicula> peliculas = this.sugerencia.sugerir(grilla);
+        List<Pelicula> peliculas = this.sugerencia.sugerir(this);
         return peliculas;
     }
 
     public List<Pelicula> getPeliculas(){
         return this.grilla;
+    }
+
+    public List<Pelicula> getConocidas(){
+        return this.conocidas;
     }
     
 }
