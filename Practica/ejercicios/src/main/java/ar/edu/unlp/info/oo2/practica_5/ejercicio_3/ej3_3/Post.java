@@ -2,7 +2,7 @@ package ar.edu.unlp.info.oo2.practica_5.ejercicio_3.ej3_3;
 
 import java.time.LocalDateTime;
 
-// Bad smell: método largo, clase de datos
+// Bad smell: método largo
 // Refactoring usando: Move method, Extract method, Decompose conditional
 public class Post {
 

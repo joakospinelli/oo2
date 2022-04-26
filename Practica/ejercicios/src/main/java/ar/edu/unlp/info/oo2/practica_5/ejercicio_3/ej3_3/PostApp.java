@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-// Bad smell: método largo, clase de datos
+// Bad smell: método largo
 // Refactoring usando: Move method, Extract method, Decompose conditional
 public class PostApp {
     
