@@ -4,11 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unlp.info.oo2.practica_7.ejercicio_1.LavadoDiario;
-import ar.edu.unlp.info.oo2.practica_7.ejercicio_1.Lavarropas;
-import ar.edu.unlp.info.oo2.practica_7.ejercicio_1.RopaDelicada;
-import ar.edu.unlp.info.oo2.practica_7.ejercicio_1.RopaMuySucia;
-
 public class LavarropasTest {
     
     Lavarropas lavarropas;
