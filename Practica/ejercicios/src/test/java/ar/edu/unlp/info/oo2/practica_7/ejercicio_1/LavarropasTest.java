@@ -34,6 +34,6 @@ public class LavarropasTest {
     @Test
     void testRopaMuySucia(){
         lavarropas.cambiarLavado(new RopaMuySucia());
-        assertEquals(100 + 15 + 10,lavarropas.iniciarLavado());
+        assertEquals(130 + 15 + 10,lavarropas.iniciarLavado());
     }
 }

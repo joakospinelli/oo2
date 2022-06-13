@@ -2,7 +2,7 @@ package ar.edu.unlp.info.oo2.practica_7.ejercicio_1;
 
 public class Lavarropas {
     
-    private LavarropasState modoLavado;
+    private LavarropasStrategy modoLavado;
 
     public int iniciarLavado(){
         return modoLavado.iniciarLavado(this);
@@ -16,8 +16,8 @@ public class Lavarropas {
 	public void enjuaga(int minutos) {}
 	public void centrifugar(int minutos) {}
 
-    public void cambiarLavado(LavarropasState state){
-        this.modoLavado = state;
+    public void cambiarLavado(LavarropasStrategy strategy){
+        this.modoLavado = strategy;
     }
 
 }

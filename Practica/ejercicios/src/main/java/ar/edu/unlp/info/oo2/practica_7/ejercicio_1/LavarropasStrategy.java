@@ -1,6 +1,6 @@
 package ar.edu.unlp.info.oo2.practica_7.ejercicio_1;
 
-public abstract class LavarropasState {
+public abstract class LavarropasStrategy {
 
     // Template Method
     public final int iniciarLavado(Lavarropas lavarropas,int agua,int tiempo,int enjuague,int centrifugar){
